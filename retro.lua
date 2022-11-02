@@ -25,7 +25,7 @@ local fruits = {
     "Berry"
 }
 local autoplantDropdown = autofarmTab.new("Dropdown", {text="fruits"})
-local plantButton = autofarmTab.new("Button", {text=" plant 5 boxes "})
+local plantButton = autofarmTab.new("Switch", {text=" plant 5 boxes "})
 plantButton.event:Connect(function()
     for i = 1, 1 do
         local ohString1 = "Plant Box"
