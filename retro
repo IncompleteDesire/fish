@@ -156,7 +156,7 @@ flyToggle.event:Connect(function(v)
     end
 end)
 
--- took this from devforums
+-- i updated this part
 local function getClosest()
     local hrp = Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").Position
     local closest_distance = math.huge
