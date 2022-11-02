@@ -3,7 +3,7 @@ local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local TweenService = game:GetService("TweenService")
 local mouse = Players.LocalPlayer:GetMouse()
 local ui = loadstring(game:HttpGet("https://raw.githubusercontent.com/Singularity5490/rbimgui-2/main/rbimgui-2.lua"))()
-local window = ui.new({text="booga booga :flushed:", size=Vector2.new(400, 300)})
+local window = ui.new({text="booga booga :updated:", size=Vector2.new(400, 300)})
 local mainTab = window.new({text="main"})
 local combatTab = window.new({text="combat"})
 local autofarmTab = window.new({text="autofarm"})
@@ -27,7 +27,7 @@ local fruits = {
 local autoplantDropdown = autofarmTab.new("Dropdown", {text="fruits"})
 local plantButton = autofarmTab.new("Button", {text=" plant 5 boxes "})
 plantButton.event:Connect(function()
-    for i = 1, 5 do
+    for i = 1, 1 do
         local ohString1 = "Plant Box"
         local ohCFrame2 = CFrame.new(Players.LocalPlayer.Character.HumanoidRootPart.Position.X,Players.LocalPlayer.Character.HumanoidRootPart.Position.Y-3,Players.LocalPlayer.Character.HumanoidRootPart.Position.Z+i, 1, 0, 0, 0, 1, 0, 0, 0, 1)
         local ohNumber3 = 0
