@@ -29,7 +29,7 @@ local plantButton = autofarmTab.new("Button", {text=" Plant Boxes "})
 plantButton.event:Connect(function()
     for i = 1, 1 do
         local ohString1 = "Plant Box"
-        local ohCFrame2 = CFrame.new(Players.LocalPlayer.Character.HumanoidRootPart.Position.X,Players.LocalPlayer.Character.HumanoidRootPart.Position.Y-2,Players.LocalPlayer.Character.HumanoidRootPart.Position.Z+i, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+        local ohCFrame2 = CFrame.new(Players.LocalPlayer.Character.HumanoidRootPart.Position.X,Players.LocalPlayer.Character.HumanoidRootPart.Position.Y+i,Players.LocalPlayer.Character.HumanoidRootPart.Position.Z+i, 1, 0, 0, 0, 1, 0, 0, 0, 1)
         local ohNumber3 = 0
         game:GetService("ReplicatedStorage").Events.PlaceStructure:FireServer(ohString1, ohCFrame2, ohNumber3)
     end
