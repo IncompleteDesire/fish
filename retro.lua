@@ -22,8 +22,6 @@ local fruits = {
     "Bloodfruit",
     "Sunfruit",
     "Bluefruit",
-    "Oddberry",
-    "Strangefruit",
     "Berry"
 }
 local autoplantDropdown = autofarmTab.new("Dropdown", {text="fruits"})
