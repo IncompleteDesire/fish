@@ -276,7 +276,7 @@ while wait(0.2) do
         for i,v in pairs(workspace.Deployables:GetChildren()) do
             if v.Name == "Plant Box" then
                 local part = v:FindFirstChildOfClass("Part")
-                if (hrp - part.Position).Magnitude <= 30 then
+                if (hrp - part.Position).Magnitude <= 25 then
                     game:GetService("ReplicatedStorage").Events.lnteractStructure:FireServer(v, chosenFruit)
                 end
             end
